@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Power BI Portfolio – Krishna Kishore</title>
   <style>
     * {
@@ -73,17 +73,20 @@
       <button class="nav-link active" onclick="showReport(0)">📊 Adventure Works</button>
       <button class="nav-link" onclick="showReport(1)">🗳️ Andhra Pradesh Election Dashboard</button>
     </div>
+
     <div class="content">
-  <iframe id="reportFrame"
-    src="https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36"
-    allowFullScreen="true">
-  </iframe>
-</div>
+      <iframe
+        id="reportFrame"
+        src="https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36"
+        allowFullScreen="true"
+      ></iframe>
+    </div>
+  </div>
 
   <script>
     const reports = [
-      "https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36",
-      "https://app.powerbi.com/view?r=eyJrIjoiZGI3ZmM3ZDYtZTQzNy00MjNlLTk2MjQtZGIzODQ3ZDBjZjAzIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=2eaeffaf5136009c5d0e"
+      "https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36", // Adventure Works
+      "https://app.powerbi.com/view?r=eyJrIjoiZGI3ZmM3ZDYtZTQzNy00MjNlLTk2MjQtZGIzODQ3ZDBjZjAzIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=2eaeffaf5136009c5d0e" // AP Election
     ];
 
     function showReport(index) {
