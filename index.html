@@ -4,44 +4,55 @@
   <meta charset="UTF-8">
   <title>Krishna Kishore – Power BI Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+    html, body {
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      height: 100%;
+      width: 100%;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
     }
 
-    h1 {
-      margin-top: 40px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #1a73e8;
+      color: white;
       text-align: center;
+      font-size: 24px;
+    }
+
+    .report-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     iframe {
-      margin: 20px 0;
-      border: 1px solid #ccc;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    p {
-      margin-bottom: 40px;
-      text-align: center;
-      max-width: 800px;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <h1>My Power BI Dashboard</h1>
-
-  <iframe width="800" height="600" 
-    src="https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36" 
-    frameborder="0" allowFullScreen="true">
-  </iframe>
-
-  <p>This dashboard provides interactive insights using Power BI. Please scroll if the full report is not visible.</p>
+  <div class="container">
+    <header>
+      My Power BI Dashboard
+    </header>
+    <div class="report-container">
+      <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiZGNkNmU4OGUtMjNlZC00ZThlLWJkZTUtMjhhNzgwODk2M2YwIiwidCI6ImFhYjYyZTA1LWI5ZWQtNDA4Zi05YTM5LTQ1MTMyMDRlYTFlMCJ9&pageName=5492ef5ad7d578fd7f36" frameborder="0" allowFullScreen="true"
+        allowFullScreen="true">
+      </iframe>
+    </div>
+  </div>
 </body>
 </html>
